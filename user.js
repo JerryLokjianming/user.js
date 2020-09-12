@@ -1281,7 +1281,7 @@ user_pref("browser.newtabpage.activity-stream.feeds.system.topsites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.system.topstories", false);
 user_pref("browser.newtabpage.activity-stream.feeds.systemtick", false);
 user_pref("browser.newtabpage.activity-stream.feeds.telemetry", false);
-user_pref("browser.newtabpage.activity-stream.feeds.topsites", false)
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
 user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 user_pref("browser.newtabpage.activity-stream.showSearch", false);
@@ -1292,7 +1292,7 @@ user_pref("browser.urlbar.suggest.bookmark", false);
 user_pref("browser.urlbar.suggest.history", false);
 user_pref("browser.urlbar.suggest.openpage", false);
 user_pref("browser.urlbar.suggest.searches", false);
-user_pref("browser.urlbar.suggest.topsites", false)
+user_pref("browser.urlbar.suggest.topsites", false);
 user_pref("browser.urlbar.suggest.topsites", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
