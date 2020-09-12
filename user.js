@@ -233,7 +233,7 @@ user_pref("javascript.use_us_english_locale",			true);
 
 // PREF: Do not submit invalid URIs entered in the address bar to the default search engine
 // http://kb.mozillazine.org/Keyword.enabled
-user_pref("keyword.enabled",					false);
+user_pref("keyword.enabled",					true);
 
 // PREF: Don't trim HTTP off of URLs in the address bar.
 // https://bugzilla.mozilla.org/show_bug.cgi?id=665580
@@ -249,7 +249,7 @@ user_pref("browser.fixup.hide_user_pass", true);
 
 // PREF: Send DNS request through SOCKS when SOCKS proxying is in use
 // https://trac.torproject.org/projects/tor/wiki/doc/TorifyHOWTO/WebBrowsers
-user_pref("network.proxy.socks_remote_dns",			true);
+user_pref("network.proxy.socks_remote_dns",			false);
 
 // PREF: Don't monitor OS online/offline connection state
 // https://trac.torproject.org/projects/tor/ticket/18945
@@ -294,13 +294,13 @@ user_pref("javascript.options.asmjs",				false);
 // PREF: Disable SVG in OpenType fonts
 // https://wiki.mozilla.org/SVGOpenTypeFonts
 // https://github.com/iSECPartners/publications/tree/master/reports/Tor%20Browser%20Bundle
-user_pref("gfx.font_rendering.opentype_svg.enabled",		false);
+user_pref("gfx.font_rendering.opentype_svg.enabled",		true);
 
 // PREF: Disable in-content SVG rendering (Firefox >= 53) (disabled)
 // NOTICE-DISABLED: Disabling SVG support breaks many UI elements on many sites
 // https://bugzilla.mozilla.org/show_bug.cgi?id=1216893
 // https://github.com/iSECPartners/publications/raw/master/reports/Tor%20Browser%20Bundle/Tor%20Browser%20Bundle%20-%20iSEC%20Deliverable%201.3.pdf#16
-//user_pref("svg.disabled", true);
+user_pref("svg.disabled", false);
 
 
 // PREF: Disable video stats to reduce fingerprinting threat
@@ -319,7 +319,7 @@ user_pref("browser.startup.homepage_override.buildID",		"20100101");
 // https://github.com/pyllyukko/user.js/issues/395
 // https://browserleaks.com/fonts
 // https://github.com/pyllyukko/user.js/issues/120
-user_pref("browser.display.use_document_fonts",			0);
+user_pref("browser.display.use_document_fonts",			1);
 
 // PREF: Enable only whitelisted URL protocol handlers
 // http://kb.mozillazine.org/Network.protocol-handler.external-default
@@ -780,7 +780,7 @@ user_pref("network.cookie.thirdparty.sessionOnly",		true);
 // NOTICE: Private browsing breaks Kerberos authentication
 // NOTICE: Disables "Containers" functionality (see below)
 // NOTICE: "Always use private browsing mode" (browser.privatebrowsing.autostart) disables the possibility to use password manager: https://support.mozilla.org/en-US/kb/usernames-and-passwords-are-not-saved#w_private-browsing
-user_pref("browser.privatebrowsing.autostart",			true);
+user_pref("browser.privatebrowsing.autostart",			false);
 
 // PREF: Do not download URLs for the offline cache
 // http://kb.mozillazine.org/Browser.cache.offline.enable
@@ -792,8 +792,8 @@ user_pref("browser.cache.offline.enable",			false);
 // NOTICE: Installing user.js **will remove your saved passwords** (https://github.com/pyllyukko/user.js/issues/27)
 // NOTICE: Clearing open windows on Firefox exit causes 2 windows to open when Firefox starts https://bugzilla.mozilla.org/show_bug.cgi?id=1334945
 user_pref("privacy.sanitize.sanitizeOnShutdown",		true);
-user_pref("privacy.clearOnShutdown.cache",			true);
-user_pref("privacy.clearOnShutdown.cookies",			true);
+user_pref("privacy.clearOnShutdown.cache",				false);
+user_pref("privacy.clearOnShutdown.cookies",			false);
 user_pref("privacy.clearOnShutdown.downloads",			true);
 user_pref("privacy.clearOnShutdown.formdata",			true);
 user_pref("privacy.clearOnShutdown.history",			true);
@@ -806,8 +806,8 @@ user_pref("privacy.sanitize.timeSpan",				0);
 
 // PREF: Clear everything but "Site Preferences" in "Clear Recent History"
 user_pref("privacy.cpd.offlineApps",				true);
-user_pref("privacy.cpd.cache",					true);
-user_pref("privacy.cpd.cookies",				true);
+user_pref("privacy.cpd.cache",					false);
+user_pref("privacy.cpd.cookies",				false);
 user_pref("privacy.cpd.downloads",				true);
 user_pref("privacy.cpd.formdata",				true);
 user_pref("privacy.cpd.history",				true);
@@ -1023,7 +1023,7 @@ user_pref("network.stricttransportsecurity.preloadlist",	true);
 // NOTICE: OCSP adds latency (performance)
 // NOTICE: Short-lived certificates are not checked for revocation (security.pki.cert_short_lifetime_in_days, default:10)
 // CIS Version 1.2.0 October 21st, 2011 2.2.4
-user_pref("security.OCSP.enabled",				1);
+user_pref("security.OCSP.enabled",				0);
 
 // PREF: Enable OCSP Stapling support
 // https://en.wikipedia.org/wiki/OCSP_stapling
@@ -1202,3 +1202,43 @@ user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 //user_pref("security.ssl3.rsa_aes_128_sha",			false); // 0x2f
 //user_pref("security.ssl3.ecdhe_rsa_aes_256_sha",		false); // 0xc014
 //user_pref("security.ssl3.ecdhe_ecdsa_aes_256_sha",		false); // 0xc00a
+
+
+/******************************************************************************
+ * SECTION: Custom                                                     		  *
+ ******************************************************************************/
+
+// PREF: Disable UI Animation
+user_pref("ui.prefersReducedMotion", 						            1);
+
+// PREF: Disable SmoothScroll
+user_pref("general.smoothScroll", 							            false);
+user_pref("general.smoothScroll.lines", 					          false);
+user_pref("general.smoothScroll.lines.durationMaxMS", 		  0);
+user_pref("general.smoothScroll.lines.durationMinMS", 		  0);
+user_pref("general.smoothScroll.mouseWheel", 				        false);
+user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 	0);
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 	0);
+user_pref("general.smoothScroll.other", 					          false);
+user_pref("general.smoothScroll.other.durationMaxMS", 		  0);
+user_pref("general.smoothScroll.other.durationMinMS", 		  0);
+user_pref("general.smoothScroll.pages", 					          false);
+user_pref("general.smoothScroll.pages.durationMinMS", 		  0);
+user_pref("general.smoothScroll.pixels", 					          false);
+user_pref("general.smoothScroll.pixels.durationMaxMS", 		  0);
+user_pref("general.smoothScroll.pixels.durationMinMS", 		  0);
+user_pref("general.smoothScroll.scrollbars", 				        false);
+user_pref("general.smoothScroll.scrollbars.durationMaxMS", 	0);
+user_pref("general.smoothScroll.scrollbars.durationMinMS", 	0);
+
+// PREF: Disable Permissions
+user_pref("media.autoplay.blocking_policy", 				        2);
+user_pref("media.autoplay.default", 						            5);
+user_pref("permissions.default.camera", 					          2);
+user_pref("permissions.default.desktop-notification", 		  2);
+user_pref("permissions.default.geo", 						            2);
+user_pref("permissions.default.microphone", 				        2);
+user_pref("permissions.default.xr", 						            2);
+
+// PREF: Disable Gif
+user_pref("image.animation_mode", 							            "none");
