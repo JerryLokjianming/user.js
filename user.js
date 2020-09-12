@@ -1215,24 +1215,34 @@ user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 user_pref("ui.prefersReducedMotion", 						            1);
 
 // PREF: Disable SmoothScroll
-user_pref("general.smoothScroll", 							            false);
-user_pref("general.smoothScroll.lines", 					          false);
-user_pref("general.smoothScroll.lines.durationMaxMS", 		  0);
-user_pref("general.smoothScroll.lines.durationMinMS", 		  0);
-user_pref("general.smoothScroll.mouseWheel", 				        false);
-user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 	0);
-user_pref("general.smoothScroll.mouseWheel.durationMinMS", 	0);
-user_pref("general.smoothScroll.other", 					          false);
-user_pref("general.smoothScroll.other.durationMaxMS", 		  0);
-user_pref("general.smoothScroll.other.durationMinMS", 		  0);
-user_pref("general.smoothScroll.pages", 					          false);
-user_pref("general.smoothScroll.pages.durationMinMS", 		  0);
-user_pref("general.smoothScroll.pixels", 					          false);
-user_pref("general.smoothScroll.pixels.durationMaxMS", 		  0);
-user_pref("general.smoothScroll.pixels.durationMinMS", 		  0);
-user_pref("general.smoothScroll.scrollbars", 				        false);
-user_pref("general.smoothScroll.scrollbars.durationMaxMS", 	0);
-user_pref("general.smoothScroll.scrollbars.durationMinMS", 	0);
+user_pref("general.smoothScroll", false);
+user_pref("general.smoothScroll.durationToIntervalRatio", 0);
+user_pref("general.smoothScroll.lines", false);
+user_pref("general.smoothScroll.lines.durationMaxMS", 0);
+user_pref("general.smoothScroll.lines.durationMinMS", 0);
+user_pref("general.smoothScroll.mouseWheel", false);
+user_pref("general.smoothScroll.mouseWheel.durationMaxMS", 0);
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 0);
+user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS", 0);
+user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 0);
+user_pref("general.smoothScroll.msdPhysics.regularSpringConstant", 0);
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 0);
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", "0");
+user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 0);
+user_pref("general.smoothScroll.other", false);
+user_pref("general.smoothScroll.other.durationMaxMS", 0);
+user_pref("general.smoothScroll.other.durationMinMS", 0);
+user_pref("general.smoothScroll.pages", false);
+user_pref("general.smoothScroll.pages.durationMaxMS", 0);
+user_pref("general.smoothScroll.pages.durationMinMS", 0);
+user_pref("general.smoothScroll.pixels", false);
+user_pref("general.smoothScroll.pixels.durationMaxMS", 0);
+user_pref("general.smoothScroll.pixels.durationMinMS", 0);
+user_pref("general.smoothScroll.scrollbars", false);
+user_pref("general.smoothScroll.scrollbars.durationMaxMS", 0);
+user_pref("general.smoothScroll.scrollbars.durationMinMS", 0);
+user_pref("general.smoothScroll.stopDecelerationWeighting", "0");
+user_pref("toolkit.scrollbox.smoothScroll", false)
 
 // PREF: Disable Permissions
 user_pref("media.autoplay.blocking_policy", 				        2);
