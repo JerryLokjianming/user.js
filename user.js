@@ -314,6 +314,7 @@ user_pref("media.video_stats.enabled",				false);
 // https://bugzilla.mozilla.org/show_bug.cgi?id=583181
 user_pref("general.buildID.override",				"20100101");
 user_pref("browser.startup.homepage_override.buildID",		"20100101");
+user_pref("browser.startup.homepage, about:blank")
 
 // PREF: Don't use document specified fonts to prevent installed font enumeration (fingerprinting)
 // https://github.com/pyllyukko/user.js/issues/395
@@ -626,7 +627,7 @@ user_pref("extensions.pocket.enabled",				false);
 
 // PREF: Disable "Recommended by Pocket" in Firefox Quantum
 user_pref("browser.newtabpage.activity-stream.feeds.section.topstories",	false);
-
+user_pref("browser.newtabpage.activity-stream.section.highlights.includePocket", false);
 /******************************************************************************
  * SECTION: Automatic connections                                             *
  ******************************************************************************/
@@ -1244,3 +1245,12 @@ user_pref("permissions.default.xr", 						            2);
 
 // PREF: Disable Gif
 user_pref("image.animation_mode", 							            "none");
+
+// PREF: PiP
+user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
+
+// PREF: //
+user_pref("browser.newtabpage.activity-stream.asrouter.userprefs.cfr.features", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", false)
+user_pref("browser.urlbar.suggest.topsites", false)
