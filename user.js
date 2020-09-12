@@ -1207,6 +1207,8 @@ user_pref("security.ssl3.dhe_dss_camellia_256_sha",		false);
 /******************************************************************************
  * SECTION: Custom                                                     		  *
  ******************************************************************************/
+// PREF: Enable custom userChrome.css / userContent.css
+user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);
 
 // PREF: Disable UI Animation
 user_pref("ui.prefersReducedMotion", 						            1);
