@@ -1245,7 +1245,7 @@ user_pref("general.smoothScroll.stopDecelerationWeighting", "0");
 user_pref("toolkit.scrollbox.smoothScroll", false)
 
 // PREF: Disable Permissions
-user_pref("media.autoplay.blocking_policy", 				        2);
+user_pref("media.autoplay.blocking_policy", 2);
 user_pref("media.autoplay.default", 						            5);
 user_pref("permissions.default.camera", 					          2);
 user_pref("permissions.default.desktop-notification", 		  2);
