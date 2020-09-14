@@ -1297,4 +1297,6 @@ user_pref("browser.urlbar.suggest.topsites", false);
 user_pref("extensions.formautofill.addresses.enabled", false);
 user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", false);
 user_pref("startup.homepage_welcome_url", "about:blank");
-user_pref("browser.urlbar.maxRichResults", 0;
+user_pref("browser.urlbar.maxRichResults", 0);
+user_pref("reader.parse-on-load.enabled", false);
+user_pref("reader.toolbar.vertical", false);
