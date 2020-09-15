@@ -1,0 +1,9 @@
+* {
+    outline: 0 !important;
+}
+      @-moz-document url("about:newtab") {  
+          body {
+              background-color: #000000 !important;
+          }
+      }
+
